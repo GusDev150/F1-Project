@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@font-face {
+    font-family: 'F1 Font';
+    src: url(font/Formula1-Bold_web_0.ttf) format(truetype);
+}
+
+:root {
+    --vermelho: #E10600;
+    --amarelo-escuro: #f29e38;
+    --amarelo:#f2b138;
+    --laranja: #c43225;
+    --vermelho-escuro: #73061a;
+
+    --fonte1: "Titillium Web", sans-serif;
+    --fonte2: 'F1 Font';
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    font-family: var(--fonte2);
+}
+
+p {
+    font-family: var(--fonte1);
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-indent: 10px;
+    padding: 10px 0px;
+    text-align: justify;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: var(--vermelho);
+    gap: 10px;
+    padding: 8px 5px;
+}
+
+header h1 {
+    font-family: 'F1 Font';
+    font-weight: bold;
+    font-size: 2.3rem;
+    padding-bottom: 5px;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+header nav ul li a {
+    display: inline-block;
+    color: black;
+    font-family: var(--fonte1);
+    text-decoration: none;
+
+    background-color: rgba(255, 255, 255, 0.733);
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 0.2px 0.2px 0.1px 0.2px rgba(255, 255, 255, 0.63);
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    box-shadow: none;
+    background-color: gray;
+    color: var(--vermelho);
+    transform: scale(1.08);
+}
+
+main#container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2.6em;
+
+    padding: 20px;
+}
+
+article#introduction h1 {
+    font-size: 2.5em;
+    padding-bottom: 10px;
+}
+
+main#container > section {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+}
+
+main#container > section h2 {
+    font-size: 2.8em;
+}
+
+main#container > section p {
+    font-size: 1.2em;
+}
+
+img {
+    padding: 10px 0px;
+    width: 95%;
+    margin: auto;
+}
+
+footer {
+    background-color: black;
+    color: #E10600;
+    padding: 10px 5px;
+}
+
+.footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    gap: 15px;
+}
+
+.footer-section img {
+    height: 200px;
+    width: 200px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li a {
+    color: var(--vermelho);
+    font-family: var(--fonte1);
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section p {
+    text-indent: 0;
+    font-size: 0.9em;
+    padding: 10px 0px;
+    line-height: 0;
+}
+
+.footer-section h3 {
+    font-family: var(--fonte2);
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+.footer-bottom {
+    background-color: #E10600;
+    color: black;
+    font-size: 0.9em;
+}
+
+.footer-bottom p {
+    text-align: center;
+}
