@@ -120,6 +120,7 @@ main#container > section p {
 img {
     padding: 10px 0px;
     width: 95%;
+    height: auto;
     margin: auto;
 }
 
